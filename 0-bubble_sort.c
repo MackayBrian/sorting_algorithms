@@ -6,7 +6,8 @@
  */
 void bubble_sort(int *array, size_t size)
 {
-	int i, j, temp, flag = 0;
+	size_t i, j, temp;
+	int flag = 0;
 
 	for (i = 0; i < size - 1; i++)
 	{
@@ -19,7 +20,7 @@ void bubble_sort(int *array, size_t size)
 					array[j] = array[j + 1];
 					array[j + 1] = temp;
 					flag = 1;
-					printf("%d\n", array);
+					printf("%d\n", array[j]);
 				}
 				if (flag == 0)
 				break;
